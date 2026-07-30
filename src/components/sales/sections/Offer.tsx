@@ -55,14 +55,16 @@ export function Offer() {
                   >
                     <Gift className="mt-0.5 size-5 shrink-0 text-brand-accent" aria-hidden="true" />
                     <div className="min-w-0 flex-1">
-                      <p className="text-sm font-bold uppercase tracking-wide text-brand-accent">
-                        Bônus · {b.name}
-                      </p>
+                      <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
+                        <p className="text-sm font-bold uppercase tracking-wide text-brand-accent">
+                          Bônus · {b.name}
+                        </p>
+                        <span className="text-sm font-semibold line-through opacity-60">
+                          {b.value}
+                        </span>
+                      </div>
                       <p className="mt-1 text-sm text-secondary-foreground">{b.text}</p>
                     </div>
-                    <span className="shrink-0 text-sm font-semibold line-through opacity-60">
-                      {b.value}
-                    </span>
                   </div>
                 ))}
               </div>
