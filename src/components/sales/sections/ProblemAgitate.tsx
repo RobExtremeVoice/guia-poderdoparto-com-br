@@ -5,26 +5,26 @@ import { CtaButton } from "../CtaButton";
 const problems = [
   {
     icon: Clock,
-    title: "Appointments are short",
-    text: "The average prenatal consultation lasts less than 12 minutes. Blood pressure, belly measurement, a quick look at the exams — and the door is already open again.",
+    title: "As consultas são curtas",
+    text: "A consulta média de pré-natal dura menos de 12 minutos. Pressão, altura uterina, uma olhada rápida nos exames — e a porta já está aberta de novo.",
   },
   {
     icon: Brain,
-    title: "Everything you wanted to ask disappears",
-    text: "You rehearsed the question in the car. Then the doctor asks how you're feeling, you say \"fine\", and you leave the room with the question still inside you.",
+    title: "Tudo o que você queria perguntar some",
+    text: "Você ensaiou a pergunta no caminho. Aí o médico pergunta como você está, você responde “bem”, e sai da sala com a dúvida ainda presa na garganta.",
   },
   {
     icon: Timer,
-    title: "Some things are discovered too late",
-    text: "Birth plan, warning signs, hospital routines, breastfeeding support — many mothers only learn what to ask when there's no longer time to change anything.",
+    title: "Algumas coisas você descobre tarde demais",
+    text: "Plano de parto, sinais de alerta, rotinas da maternidade, apoio à amamentação — muitas mães só descobrem o que perguntar quando já não dá mais tempo de mudar nada.",
   },
 ];
 
 const agitations = [
-  { icon: AlertTriangle, label: "Anxiety between appointments" },
-  { icon: HeartCrack, label: "Insecurity about your own body" },
-  { icon: ShieldOff, label: "Procedures you never agreed to" },
-  { icon: Brain, label: "Decisions made without you" },
+  { icon: AlertTriangle, label: "Ansiedade entre uma consulta e outra" },
+  { icon: HeartCrack, label: "Insegurança sobre o próprio corpo" },
+  { icon: ShieldOff, label: "Procedimentos que você nunca autorizou" },
+  { icon: Brain, label: "Decisões tomadas sem você" },
 ];
 
 export function ProblemAgitate() {
@@ -34,12 +34,12 @@ export function ProblemAgitate() {
         <div className="mx-auto max-w-6xl px-5">
           <Reveal>
             <h2 className="mx-auto max-w-3xl text-center text-3xl font-semibold leading-tight sm:text-[2.6rem]">
-              Most pregnant women leave their appointments with more questions than answers.
+              A maioria das gestantes sai da consulta com mais dúvidas do que respostas.
             </h2>
             <p className="mx-auto mt-5 max-w-2xl text-center text-base leading-relaxed text-muted-foreground sm:text-lg">
-              You waited three weeks for those ten minutes. You sat in the waiting room rehearsing
-              what to say. And on the way home you realised: you forgot to ask the one thing that
-              had been keeping you awake.
+              Você esperou três semanas por aqueles dez minutos. Ficou na sala de espera ensaiando o
+              que dizer. E no caminho de volta percebeu: esqueceu de perguntar justamente aquilo que
+              tirava o seu sono.
             </p>
           </Reveal>
 
@@ -63,16 +63,16 @@ export function ProblemAgitate() {
         <div className="mx-auto max-w-4xl px-5 text-center">
           <Reveal>
             <h2 className="text-3xl font-semibold leading-tight sm:text-[2.5rem]">
-              The problem isn't the question you forgot. It's everything that grows in its place.
+              O problema não é a pergunta esquecida. É tudo o que cresce no lugar dela.
             </h2>
             <div className="mx-auto mt-7 max-w-2xl space-y-4 text-base leading-relaxed text-secondary-foreground sm:text-lg">
               <p>
-                Silence turns into searching at 2 a.m., where every symptom becomes the worst-case
-                scenario. Doubt turns into fear. Fear turns into a woman who nods at everything
-                because she doesn't feel entitled to ask.
+                O silêncio vira busca no Google às 2 da manhã, onde todo sintoma vira o pior
+                cenário. A dúvida vira medo. O medo vira uma mulher que concorda com tudo porque não
+                se sente no direito de perguntar.
               </p>
               <p className="font-semibold text-foreground">
-                And then the birth happens the way someone else decided.
+                E então o parto acontece do jeito que outra pessoa decidiu.
               </p>
             </div>
           </Reveal>
@@ -90,7 +90,7 @@ export function ProblemAgitate() {
 
           <Reveal delay={0.1}>
             <p className="mt-10 font-display text-xl font-semibold sm:text-2xl">
-              You don't need to become a doctor. You just need the right questions.
+              Você não precisa virar médica. Você só precisa das perguntas certas.
             </p>
             <div className="mt-7 flex justify-center">
               <CtaButton />
