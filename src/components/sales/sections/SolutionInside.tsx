@@ -99,13 +99,14 @@ export function SolutionInside() {
               <Sparkles className="size-3.5" aria-hidden="true" /> A solução
             </span>
             <h2 className="mt-5 text-3xl font-semibold leading-tight sm:text-[2.6rem]">
-              O guia que diz exatamente o que perguntar.
+              O guia que diz o que perguntar — e como interpretar a resposta.
             </h2>
             <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
-              Sem teoria. Sem enciclopédia de 300 páginas sobre gravidez. Só as 18 perguntas que
-              mudam a forma como o seu pré-natal acontece — escritas para você abrir no celular e
-              perguntar em voz alta.
+              Sem teoria. Sem enciclopédia de 300 páginas sobre gravidez. São 18 perguntas para você
+              entender como o profissional trabalha, aprofundar respostas vagas e escolher sua
+              equipe com informação — cada uma com exemplos de resposta comentados.
             </p>
+
             <ul className="mt-8 space-y-4">
               {pillars.map((p) => (
                 <li key={p.text} className="flex items-start gap-3">
