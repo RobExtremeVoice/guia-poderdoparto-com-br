@@ -10,7 +10,8 @@ import { FAQS, PRODUCT_NAME } from "@/components/sales/data";
 
 const TITLE = "18 Perguntas para Fazer ao Obstetra | O Poder do Parto";
 const DESCRIPTION =
-  "Guia prático com as 18 perguntas essenciais para fazer em cada consulta de pré-natal. Sinta-se preparada, confiante e informada. Acesso digital imediato por R$27.";
+  "As 18 perguntas essenciais para fazer ao obstetra, com exemplos de resposta comentados e sinais de atenção. Escolha sua equipe com informação. Acesso digital imediato por R$27.";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
