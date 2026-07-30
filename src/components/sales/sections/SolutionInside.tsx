@@ -131,25 +131,46 @@ export function SolutionInside() {
               O que tem dentro do guia
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-center text-base text-secondary-foreground sm:text-lg">
-              Nove temas. Dezoito perguntas. Todas escritas para serem feitas em menos de um minuto.
+              Quatro blocos. Dezoito perguntas. Todas escritas para serem feitas em menos de um
+              minuto — e todas com exemplos de resposta comentados.
             </p>
           </Reveal>
 
-          <div className="mt-10 grid grid-cols-2 gap-3 sm:mt-14 sm:gap-5 lg:grid-cols-3">
+          <div className="mt-10 grid gap-4 sm:mt-14 sm:grid-cols-2 sm:gap-5">
             {topics.map((t, i) => (
-              <Reveal key={t.title} delay={(i % 3) * 0.06}>
-                <article className="glass-card h-full rounded-3xl p-4 transition-transform duration-300 hover:-translate-y-1 sm:p-6">
+              <Reveal key={t.title} delay={(i % 2) * 0.06}>
+                <article className="glass-card h-full rounded-3xl p-5 transition-transform duration-300 hover:-translate-y-1 sm:p-7">
                   <span className="inline-flex size-10 items-center justify-center rounded-2xl bg-brand-gradient text-brand-foreground sm:size-12">
                     <t.icon className="size-5 sm:size-6" aria-hidden="true" />
                   </span>
                   <h3 className="mt-4 text-base font-semibold sm:mt-5 sm:text-lg">{t.title}</h3>
-                  <p className="mt-1.5 text-[0.8rem] leading-relaxed text-muted-foreground sm:mt-2 sm:text-sm">
+                  <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground sm:mt-2">
                     {t.text}
                   </p>
                 </article>
               </Reveal>
             ))}
           </div>
+
+          <Reveal delay={0.08}>
+            <p className="mx-auto mt-12 max-w-2xl text-center font-display text-xl font-semibold sm:mt-16 sm:text-2xl">
+              E em cada pergunta você vê três tipos de resposta:
+            </p>
+          </Reveal>
+          <div className="mt-6 grid gap-3 sm:grid-cols-3 sm:gap-5">
+            {answerKeys.map((a, i) => (
+              <Reveal key={a.title} delay={(i % 3) * 0.06}>
+                <div className="flex h-full items-start gap-3 rounded-2xl bg-background/80 p-4 shadow-soft backdrop-blur sm:flex-col sm:gap-3 sm:p-6">
+                  <a.icon className="mt-0.5 size-5 shrink-0 text-brand-accent" aria-hidden="true" />
+                  <div className="min-w-0">
+                    <h3 className="text-sm font-semibold sm:text-base">{a.title}</h3>
+                    <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{a.text}</p>
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+
         </div>
       </section>
 
