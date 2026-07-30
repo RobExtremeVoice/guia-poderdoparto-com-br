@@ -105,15 +105,17 @@ export function SolutionInside() {
             </p>
           </Reveal>
 
-          <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-10 grid grid-cols-2 gap-3 sm:mt-14 sm:gap-5 lg:grid-cols-3">
             {topics.map((t, i) => (
               <Reveal key={t.title} delay={(i % 3) * 0.06}>
-                <article className="glass-card h-full rounded-3xl p-6 transition-transform duration-300 hover:-translate-y-1">
-                  <span className="inline-flex size-12 items-center justify-center rounded-2xl bg-brand-gradient text-brand-foreground">
-                    <t.icon className="size-6" aria-hidden="true" />
+                <article className="glass-card h-full rounded-3xl p-4 transition-transform duration-300 hover:-translate-y-1 sm:p-6">
+                  <span className="inline-flex size-10 items-center justify-center rounded-2xl bg-brand-gradient text-brand-foreground sm:size-12">
+                    <t.icon className="size-5 sm:size-6" aria-hidden="true" />
                   </span>
-                  <h3 className="mt-5 text-lg font-semibold">{t.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{t.text}</p>
+                  <h3 className="mt-4 text-base font-semibold sm:mt-5 sm:text-lg">{t.title}</h3>
+                  <p className="mt-1.5 text-[0.8rem] leading-relaxed text-muted-foreground sm:mt-2 sm:text-sm">
+                    {t.text}
+                  </p>
                 </article>
               </Reveal>
             ))}
