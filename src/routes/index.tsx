@@ -1,24 +1,80 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Hero } from "@/components/sales/sections/Hero";
+import { ProblemAgitate } from "@/components/sales/sections/ProblemAgitate";
+import { SolutionInside } from "@/components/sales/sections/SolutionInside";
+import { AuthorityTestimonials } from "@/components/sales/sections/AuthorityTestimonials";
+import { Offer } from "@/components/sales/sections/Offer";
+import { FaqFinal } from "@/components/sales/sections/FaqFinal";
+import { StickyCta } from "@/components/sales/StickyCta";
+import { FAQS, PRODUCT_NAME } from "@/components/sales/data";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+const TITLE = "18 Questions Every Pregnant Woman Must Ask Her Obstetrician";
+const DESCRIPTION =
+  "A practical guide with the 18 essential questions to ask at every prenatal appointment. Feel prepared, confident and informed. Instant digital access for R$27.";
+
 export const Route = createFileRoute("/")({
-  component: Index,
+  head: () => ({
+    meta: [
+      { title: TITLE },
+      { name: "description", content: DESCRIPTION },
+      { property: "og:title", content: TITLE },
+      { property: "og:description", content: DESCRIPTION },
+      { property: "og:type", content: "product" },
+      { property: "og:url", content: "/" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [{ rel: "canonical", href: "/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Product",
+          name: PRODUCT_NAME,
+          description: DESCRIPTION,
+          brand: { "@type": "Brand", name: "18 Perguntas" },
+          offers: {
+            "@type": "Offer",
+            price: "27.00",
+            priceCurrency: "BRL",
+            availability: "https://schema.org/InStock",
+          },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "3712",
+          },
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: FAQS.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        }),
+      },
+    ],
+  }),
+  component: SalesPage,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
+function SalesPage() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <>
+      <main className="pb-24">
+        <Hero />
+        <ProblemAgitate />
+        <SolutionInside />
+        <AuthorityTestimonials />
+        <Offer />
+        <FaqFinal />
+      </main>
+      <StickyCta />
+    </>
   );
 }
