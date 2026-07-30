@@ -66,18 +66,19 @@ export function ProblemAgitate() {
         <div className="mx-auto max-w-4xl px-5 text-center">
           <Reveal>
             <h2 className="text-3xl font-semibold leading-tight sm:text-[2.5rem]">
-              O problema não é a pergunta esquecida. É tudo o que cresce no lugar dela.
+              O problema não é a pergunta esquecida. É tudo o que acontece no lugar dela.
             </h2>
             <div className="mx-auto mt-7 max-w-2xl space-y-4 text-base leading-relaxed text-secondary-foreground sm:text-lg">
               <p>
-                O silêncio vira busca no Google às 2 da manhã, onde todo sintoma vira o pior
-                cenário. A dúvida vira medo. O medo vira uma mulher que concorda com tudo porque não
-                se sente no direito de perguntar.
+                Quando a resposta vaga passa batida, ela vira conduta no dia do parto. O “a gente vê
+                na hora” vira indução sem indicação, episiotomia de rotina, acompanhante do lado de
+                fora, bebê levado antes do primeiro contato.
               </p>
               <p className="font-semibold text-foreground">
                 E então o parto acontece do jeito que outra pessoa decidiu.
               </p>
             </div>
+
           </Reveal>
 
           <ul className="mx-auto mt-10 grid max-w-2xl gap-3 sm:grid-cols-2">
