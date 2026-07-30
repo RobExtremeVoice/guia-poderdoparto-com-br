@@ -55,7 +55,7 @@ export function AuthorityTestimonials() {
             <div className="overflow-hidden rounded-[2rem] shadow-lift">
               <img
                 src={autoraImg}
-                alt="Mariana Betioli, obstetriz, doula e educadora perinatal, autora do guia"
+                alt="Dra. Mariana Betioli, obstetriz, doula e educadora perinatal, autora do guia"
                 width={912}
                 height={1104}
                 loading="lazy"
@@ -68,7 +68,7 @@ export function AuthorityTestimonials() {
               Quem criou este guia
             </span>
             <h2 className="mt-4 text-3xl font-semibold leading-tight sm:text-[2.4rem]">
-              Mariana Betioli
+              Dra. Mariana Betioli
             </h2>
             <p className="mt-4 text-base leading-relaxed text-secondary-foreground sm:text-lg">
               Depois de anos acompanhando gestações e partos, eu via sempre a mesma coisa: mulheres
