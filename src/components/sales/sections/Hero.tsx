@@ -87,9 +87,12 @@ export function Hero() {
             />
           </div>
           <div className="glass-card absolute -bottom-5 left-4 right-4 rounded-2xl px-5 py-4 sm:left-8 sm:right-auto sm:max-w-xs">
-            <p className="font-display text-lg font-semibold">18 perguntas. 1 checklist.</p>
-            <p className="text-sm text-muted-foreground">Pronto antes da sua próxima consulta.</p>
+            <p className="font-display text-lg font-semibold">18 perguntas. 4 blocos.</p>
+            <p className="text-sm text-muted-foreground">
+              Respostas comentadas + espaço para anotar.
+            </p>
           </div>
+
         </motion.div>
       </div>
     </section>
