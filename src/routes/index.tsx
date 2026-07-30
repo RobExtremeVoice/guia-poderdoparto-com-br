@@ -8,9 +8,9 @@ import { FaqFinal } from "@/components/sales/sections/FaqFinal";
 import { StickyCta } from "@/components/sales/StickyCta";
 import { FAQS, PRODUCT_NAME } from "@/components/sales/data";
 
-const TITLE = "18 Questions Every Pregnant Woman Must Ask Her Obstetrician";
+const TITLE = "18 Perguntas para Fazer ao Obstetra | O Poder do Parto";
 const DESCRIPTION =
-  "A practical guide with the 18 essential questions to ask at every prenatal appointment. Feel prepared, confident and informed. Instant digital access for R$27.";
+  "Guia prático com as 18 perguntas essenciais para fazer em cada consulta de pré-natal. Sinta-se preparada, confiante e informada. Acesso digital imediato por R$27.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -22,6 +22,7 @@ export const Route = createFileRoute("/")({
       { property: "og:type", content: "product" },
       { property: "og:url", content: "/" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:locale", content: "pt_BR" },
     ],
     links: [{ rel: "canonical", href: "/" }],
     scripts: [
@@ -32,7 +33,7 @@ export const Route = createFileRoute("/")({
           "@type": "Product",
           name: PRODUCT_NAME,
           description: DESCRIPTION,
-          brand: { "@type": "Brand", name: "18 Perguntas" },
+          brand: { "@type": "Brand", name: "O Poder do Parto" },
           offers: {
             "@type": "Offer",
             price: "27.00",

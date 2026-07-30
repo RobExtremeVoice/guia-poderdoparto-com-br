@@ -8,26 +8,26 @@ type CtaButtonProps = {
   label?: string;
 };
 
-export const CHECKOUT_URL = "#offer";
+export const CHECKOUT_URL = "#oferta";
 
-/** Primary conversion button, used on every CTA block. */
+/** Botão principal de conversão, usado em todos os blocos de CTA. */
 export function CtaButton({
   children = (
     <>
-      <span className="block text-xs font-bold tracking-[0.22em] opacity-90">YES!</span>
-      <span className="block">I WANT MY GUIDE NOW</span>
+      <span className="block text-xs font-bold tracking-[0.22em] opacity-90">SIM!</span>
+      <span className="block">QUERO MEU GUIA AGORA</span>
     </>
   ),
   className,
   size = "lg",
-  label = "Get the guide now",
+  label = "Quero meu guia agora",
 }: CtaButtonProps) {
   return (
     <a
       href={CHECKOUT_URL}
       aria-label={label}
       className={cn(
-        "group inline-flex w-full max-w-md items-center justify-center gap-3 rounded-full bg-brand-gradient text-center font-bold uppercase leading-tight text-brand-foreground shadow-lift transition-all duration-300 hover:-translate-y-0.5 hover:brightness-105 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-ring/40 active:translate-y-0",
+        "group inline-flex w-full max-w-md items-center justify-center gap-3 rounded-full bg-brand-gradient text-center font-bold uppercase leading-tight text-brand-foreground shadow-lift transition-all duration-300 hover:-translate-y-0.5 hover:brightness-110 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-ring/40 active:translate-y-0",
         size === "lg" ? "min-h-16 px-8 py-4 text-base sm:text-lg" : "min-h-12 px-6 py-3 text-sm",
         className,
       )}

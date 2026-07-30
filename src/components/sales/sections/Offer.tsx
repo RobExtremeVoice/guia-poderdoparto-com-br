@@ -3,36 +3,38 @@ import { Reveal } from "../Reveal";
 import { CtaButton } from "../CtaButton";
 
 const included = [
-  "The complete guide with 18 essential questions",
-  "Questions organised by trimester and by theme",
-  "Plain-language explanation of why each question matters",
-  "Mobile version + print-ready version",
-  "Lifetime access, including future updates",
+  "O guia completo com as 18 perguntas essenciais",
+  "Perguntas organizadas por trimestre e por tema",
+  "Explicação em linguagem simples de por que cada pergunta importa",
+  "Versão mobile + versão pronta para imprimir",
+  "Acesso vitalício, incluindo atualizações futuras",
 ];
 
 const bonuses = [
-  { name: "Printable Checklist", value: "R$37", text: "One page to fold into your prenatal folder." },
-  { name: "Consultation Notes Template", value: "R$29", text: "Record answers so nothing is lost." },
-  { name: "Hospital Bag Checklist", value: "R$24", text: "Everything for mum and baby, nothing forgotten." },
+  { name: "Checklist para imprimir", value: "R$37", text: "Uma página para dobrar e levar na pasta do pré-natal." },
+  { name: "Modelo de anotações da consulta", value: "R$29", text: "Registre as respostas para não perder nada." },
+  { name: "Checklist da mala da maternidade", value: "R$24", text: "Tudo para a mãe e o bebê, sem esquecer nada." },
 ];
 
 export function Offer() {
   return (
-    <section id="offer" className="scroll-mt-8 bg-soft-glow py-20 sm:py-28">
+    <section id="oferta" className="scroll-mt-8 bg-soft-glow py-20 sm:py-28">
       <div className="mx-auto max-w-3xl px-5">
         <Reveal>
           <h2 className="text-center text-3xl font-semibold leading-tight sm:text-[2.5rem]">
-            Everything you get today
+            Tudo o que você recebe hoje
           </h2>
           <p className="mt-4 text-center text-base text-muted-foreground sm:text-lg">
-            Less than the cost of a parking ticket at the clinic.
+            Menos do que o estacionamento de uma consulta.
           </p>
         </Reveal>
 
         <Reveal delay={0.08}>
           <div className="mt-12 overflow-hidden rounded-[2rem] border border-brand/15 bg-card shadow-lift">
             <div className="bg-brand-gradient px-6 py-5 text-center text-brand-foreground">
-              <p className="text-xs font-bold uppercase tracking-[0.22em]">Limited launch price</p>
+              <p className="text-xs font-bold uppercase tracking-[0.22em]">
+                Preço de lançamento · vagas limitadas
+              </p>
             </div>
 
             <div className="px-6 py-8 sm:px-10 sm:py-10">
@@ -54,7 +56,7 @@ export function Offer() {
                     <Gift className="mt-0.5 size-5 shrink-0 text-brand-accent" aria-hidden="true" />
                     <div className="min-w-0 flex-1">
                       <p className="text-sm font-bold uppercase tracking-wide text-brand-accent">
-                        Bonus · {b.name}
+                        Bônus · {b.name}
                       </p>
                       <p className="mt-1 text-sm text-secondary-foreground">{b.text}</p>
                     </div>
@@ -67,14 +69,14 @@ export function Offer() {
 
               <div className="mt-9 text-center">
                 <p className="text-sm font-medium text-muted-foreground">
-                  Total real value: <span className="line-through">R$187</span> · Regular price{" "}
+                  Valor real total: <span className="line-through">R$187</span> · Preço normal{" "}
                   <span className="line-through">R$97</span>
                 </p>
                 <p className="mt-2 font-display text-6xl font-semibold text-gradient-brand sm:text-7xl">
                   R$27
                 </p>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  One-time payment · instant access
+                  Pagamento único · acesso imediato
                 </p>
 
                 <div className="mt-7 flex justify-center">
@@ -83,11 +85,11 @@ export function Offer() {
 
                 <div className="mt-5 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs font-medium text-muted-foreground">
                   <span className="inline-flex items-center gap-1.5">
-                    <Lock className="size-4 text-success" aria-hidden="true" /> Secure checkout
+                    <Lock className="size-4 text-success" aria-hidden="true" /> Compra segura
                   </span>
                   <span className="inline-flex items-center gap-1.5">
-                    <BadgeCheck className="size-4 text-success" aria-hidden="true" /> Instant
-                    delivery
+                    <BadgeCheck className="size-4 text-success" aria-hidden="true" /> Entrega
+                    imediata
                   </span>
                 </div>
               </div>
@@ -101,18 +103,18 @@ export function Offer() {
               <span className="absolute inset-1.5 rounded-full border-2 border-dashed border-[oklch(1_0_0/0.6)]" />
               <span className="relative text-center leading-tight">
                 <ShieldCheck className="mx-auto size-7" aria-hidden="true" />
-                <span className="mt-1 block font-display text-xl font-bold">7 days</span>
+                <span className="mt-1 block font-display text-xl font-bold">7 dias</span>
                 <span className="block text-[0.6rem] font-bold uppercase tracking-widest">
-                  Guarantee
+                  Garantia
                 </span>
               </span>
             </span>
             <div>
-              <h3 className="text-2xl font-semibold">Zero-risk, 7-day money-back guarantee</h3>
+              <h3 className="text-2xl font-semibold">Garantia incondicional de 7 dias</h3>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base">
-                Read every question, print the checklist, take it to your appointment. If it doesn't
-                make you feel more prepared, send one email within 7 days and get 100% of your money
-                back. You keep the bonuses.
+                Leia todas as perguntas, imprima o checklist, leve na consulta. Se não fizer você se
+                sentir mais preparada, é só enviar um e-mail em até 7 dias e receber 100% do valor de
+                volta. Os bônus continuam com você.
               </p>
             </div>
           </div>
