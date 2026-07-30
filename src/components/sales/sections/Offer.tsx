@@ -3,18 +3,20 @@ import { Reveal } from "../Reveal";
 import { CtaButton } from "../CtaButton";
 
 const included = [
-  "O guia completo com as 18 perguntas essenciais",
-  "Perguntas organizadas por trimestre e por tema",
-  "Explicação em linguagem simples de por que cada pergunta importa",
-  "Versão mobile + versão pronta para imprimir",
-  "Acesso vitalício, incluindo atualizações futuras",
+  "As 18 perguntas essenciais, organizadas em 4 blocos",
+  "Exemplos de resposta alinhada às boas práticas em cada pergunta",
+  "Respostas que merecem mais explicação + o que perguntar em seguida",
+  "Lista de sinais de atenção antes de fechar com a equipe",
+  "Espaço para anotar as respostas, com data e hora",
+  "Acesso pelo celular na sala de espera · acesso vitalício e atualizações",
 ];
 
 const bonuses = [
   { name: "Checklist para imprimir", value: "R$37", text: "Uma página para dobrar e levar na pasta do pré-natal." },
-  { name: "Modelo de anotações da consulta", value: "R$29", text: "Registre as respostas para não perder nada." },
+  { name: "Modelo de anotações da consulta", value: "R$29", text: "Compare as respostas de cada profissional antes de decidir." },
   { name: "Checklist da mala da maternidade", value: "R$24", text: "Tudo para a mãe e o bebê, sem esquecer nada." },
 ];
+
 
 export function Offer() {
   return (
