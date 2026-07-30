@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Guia Poder do Parto - 18 Perguntas para seu Medico" },
+      { name: "description", content: "This app provides a digital guide of 18 essential questions for pregnant women to ask their obstetrician." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Guia Poder do Parto - 18 Perguntas para seu Medico" },
+      { property: "og:description", content: "This app provides a digital guide of 18 essential questions for pregnant women to ask their obstetrician." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Guia Poder do Parto - 18 Perguntas para seu Medico" },
+      { name: "twitter:description", content: "This app provides a digital guide of 18 essential questions for pregnant women to ask their obstetrician." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ef802609-5967-4fde-9ccf-9fccd47f17e8/id-preview-f07a59c0--f350638b-f5a0-45c0-b73a-3b2b78e3500a.lovable.app-1785429400594.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ef802609-5967-4fde-9ccf-9fccd47f17e8/id-preview-f07a59c0--f350638b-f5a0-45c0-b73a-3b2b78e3500a.lovable.app-1785429400594.png" },
     ],
     links: [
       {
