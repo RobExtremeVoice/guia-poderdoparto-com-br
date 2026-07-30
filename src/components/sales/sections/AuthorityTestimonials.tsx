@@ -3,42 +3,42 @@ import autoraImg from "@/assets/autora.jpg";
 import { Reveal } from "../Reveal";
 
 const credentials = [
-  { icon: GraduationCap, text: "Obstetrics & Gynaecology specialist, 18 years in practice" },
-  { icon: Users, text: "Over 2,400 births accompanied in public and private care" },
-  { icon: Award, text: "Committed to evidence-based, respectful maternity care" },
+  { icon: GraduationCap, text: "Obstetriz, doula e educadora perinatal" },
+  { icon: Users, text: "Centenas de famílias acompanhadas na gestação e no parto" },
+  { icon: Award, text: "Compromisso com informação baseada em evidências e parto respeitoso" },
 ];
 
 const testimonials = [
   {
     name: "Marina R.",
-    role: "32 weeks · São Paulo",
-    text: "I printed the checklist and took it to my appointment. For the first time my doctor stopped, sat down and explained everything. I left crying — but the good kind.",
+    role: "32 semanas · São Paulo",
+    text: "Imprimi o checklist e levei na consulta. Pela primeira vez meu médico parou, sentou e explicou tudo. Saí de lá chorando — do jeito bom.",
   },
   {
     name: "Juliana P.",
-    role: "First-time mum · Recife",
-    text: "Question number 7 changed my whole birth plan. I had no idea I could ask that, and my obstetrician actually thanked me for bringing it up.",
+    role: "Primeira gestação · Recife",
+    text: "A pergunta número 7 mudou todo o meu plano de parto. Eu nem sabia que podia perguntar aquilo, e minha obstetra ainda me agradeceu por trazer o assunto.",
   },
   {
     name: "Camila S.",
-    role: "28 weeks · Belo Horizonte",
-    text: "I used to leave every consultation feeling stupid. Now I go in with my phone open and I ask. My anxiety dropped so much my husband noticed.",
+    role: "28 semanas · Belo Horizonte",
+    text: "Eu saía de toda consulta me sentindo burra. Agora entro com o celular aberto e pergunto. Minha ansiedade caiu tanto que meu marido percebeu.",
   },
   {
     name: "Patrícia L.",
-    role: "Second pregnancy · Curitiba",
-    text: "Wish I'd had this in my first pregnancy. The emergency signs section alone made me go to hospital on the right night.",
+    role: "Segunda gestação · Curitiba",
+    text: "Queria ter tido isso na primeira gravidez. Só a parte de sinais de alerta já me fez ir para a maternidade na noite certa.",
   },
   {
     name: "Aline M.",
-    role: "38 weeks · Porto Alegre",
-    text: "R$27 for something that made me feel safe for nine months. The hospital bag checklist bonus was worth the price on its own.",
+    role: "38 semanas · Porto Alegre",
+    text: "R$27 por algo que me deu segurança durante nove meses. O bônus da mala da maternidade sozinho já valeu o preço.",
   },
 ];
 
 function Stars() {
   return (
-    <div className="flex gap-0.5" aria-label="5 out of 5 stars">
+    <div className="flex gap-0.5" aria-label="5 de 5 estrelas">
       {Array.from({ length: 5 }).map((_, i) => (
         <Star key={i} className="size-4 fill-brand text-brand" aria-hidden="true" />
       ))}
@@ -55,7 +55,7 @@ export function AuthorityTestimonials() {
             <div className="overflow-hidden rounded-[2rem] shadow-lift">
               <img
                 src={autoraImg}
-                alt="Dr. Helena Vasconcelos, obstetrician and author of the guide"
+                alt="Mariana Betioli, obstetriz, doula e educadora perinatal, autora do guia"
                 width={912}
                 height={1104}
                 loading="lazy"
@@ -65,15 +65,15 @@ export function AuthorityTestimonials() {
           </Reveal>
           <Reveal delay={0.08}>
             <span className="text-xs font-bold uppercase tracking-[0.16em] text-brand-accent">
-              Who created this guide
+              Quem criou este guia
             </span>
             <h2 className="mt-4 text-3xl font-semibold leading-tight sm:text-[2.4rem]">
-              Dr. Helena Vasconcelos
+              Mariana Betioli
             </h2>
             <p className="mt-4 text-base leading-relaxed text-secondary-foreground sm:text-lg">
-              After nearly two decades in delivery rooms, I kept seeing the same thing: informed
-              women have calmer pregnancies and safer births. This guide is the list of questions I
-              wish every patient brought with her.
+              Depois de anos acompanhando gestações e partos, eu via sempre a mesma coisa: mulheres
+              informadas têm gestações mais tranquilas e partos mais seguros. Este guia é a lista de
+              perguntas que eu gostaria que toda gestante levasse para a consulta.
             </p>
             <ul className="mt-7 space-y-4">
               {credentials.map((c) => (
@@ -85,6 +85,9 @@ export function AuthorityTestimonials() {
                 </li>
               ))}
             </ul>
+            <p className="mt-6 font-display text-lg italic text-brand-accent">
+              Informação para decidir. Confiança para viver.
+            </p>
           </Reveal>
         </div>
       </section>
@@ -93,7 +96,7 @@ export function AuthorityTestimonials() {
         <div className="mx-auto max-w-6xl px-5">
           <Reveal>
             <h2 className="text-center text-3xl font-semibold leading-tight sm:text-[2.5rem]">
-              Mothers who stopped leaving with doubts
+              Mães que pararam de sair da consulta com dúvidas
             </h2>
           </Reveal>
           <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
