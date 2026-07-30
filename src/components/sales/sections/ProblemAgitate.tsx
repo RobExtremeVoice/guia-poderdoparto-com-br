@@ -35,13 +35,15 @@ export function ProblemAgitate() {
         <div className="mx-auto max-w-6xl px-5">
           <Reveal>
             <h2 className="mx-auto max-w-3xl text-center text-3xl font-semibold leading-tight sm:text-[2.6rem]">
-              A maioria das gestantes sai da consulta com mais dúvidas do que respostas.
+              Escolher a equipe é a decisão mais importante da sua gestação — e quase ninguém sabe o
+              que perguntar.
             </h2>
             <p className="mx-auto mt-5 max-w-2xl text-center text-base leading-relaxed text-muted-foreground sm:text-lg">
               Você esperou três semanas por aqueles dez minutos. Ficou na sala de espera ensaiando o
-              que dizer. E no caminho de volta percebeu: esqueceu de perguntar justamente aquilo que
-              tirava o seu sono.
+              que dizer. E no caminho de volta percebeu: continua sem saber como esse profissional
+              conduz um parto de verdade.
             </p>
+
           </Reveal>
 
           <div className="mt-14 grid gap-6 md:grid-cols-3">
