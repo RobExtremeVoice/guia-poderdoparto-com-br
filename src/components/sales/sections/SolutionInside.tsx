@@ -1,15 +1,13 @@
 import {
-  Apple,
+  AlertTriangle,
+  BadgeCheck,
   Baby,
-  BookOpenCheck,
-  Building2,
   ClipboardList,
-  Droplets,
-  FlaskConical,
-  HeartPulse,
+  HeartHandshake,
   Languages,
-  Pill,
-  Printer,
+  MessageCircleQuestion,
+  NotebookPen,
+  Search,
   Smartphone,
   Sparkles,
   Stethoscope,
@@ -19,33 +17,64 @@ import { Reveal } from "../Reveal";
 import { CtaButton } from "../CtaButton";
 
 const pillars = [
-  { icon: ClipboardList, text: "18 perguntas organizadas por trimestre" },
-  { icon: Languages, text: "Linguagem simples, sem jargão médico" },
-  { icon: FlaskConical, text: "Baseado em evidências e comentado por especialista" },
-  { icon: Printer, text: "Versão para imprimir e levar na pasta do pré-natal" },
-  { icon: Smartphone, text: "Versão mobile para abrir na sala de espera" },
+  { icon: ClipboardList, text: "18 perguntas organizadas em 4 blocos da gestação ao pós-parto" },
+  { icon: MessageCircleQuestion, text: "Exemplos de resposta alinhada às boas práticas" },
+  { icon: AlertTriangle, text: "Sinais de atenção que merecem uma conversa mais profunda" },
+  { icon: Search, text: "O que perguntar em seguida quando a resposta for vaga" },
+  { icon: NotebookPen, text: "Espaço para anotar as respostas de cada consulta" },
+  { icon: Smartphone, text: "Abre no celular, na própria sala de espera" },
 ];
 
 const topics = [
-  { icon: BookOpenCheck, title: "Plano de parto", text: "Como montar um plano que a sua equipe realmente respeite." },
-  { icon: HeartPulse, title: "Sinais de alerta", text: "Quando ir para a maternidade na hora — e quando não se desesperar." },
-  { icon: Baby, title: "Desenvolvimento do bebê", text: "O que acompanhar em cada fase do crescimento." },
-  { icon: FlaskConical, title: "Exames", text: "Quais exames importam, quando fazer e o que os resultados dizem." },
-  { icon: Apple, title: "Nutrição", text: "Suplementos, ganho de peso e segurança alimentar na gestação." },
-  { icon: Building2, title: "Maternidade", text: "Rotinas, políticas de acompanhante e perguntas sobre internação." },
-  { icon: Stethoscope, title: "Trabalho de parto", text: "Intervenções, posições e consentimento informado." },
-  { icon: Pill, title: "Medicamentos", text: "O que é seguro, o que não é e para quem ligar na dúvida." },
-  { icon: Droplets, title: "Amamentação", text: "Apoio na primeira hora dourada e nos dias seguintes." },
+  {
+    icon: HeartHandshake,
+    title: "Bloco 1 · Escolha da equipe",
+    text: "Como o profissional enxerga parto normal, cesárea, doula e plano de parto — inclusive a taxa de cesárea dele.",
+  },
+  {
+    icon: Stethoscope,
+    title: "Bloco 2 · Condutas e decisões",
+    text: "Indução, bolsa rota, tempo de espera, comer e beber no trabalho de parto e analgesia.",
+  },
+  {
+    icon: ClipboardList,
+    title: "Bloco 3 · Durante o parto",
+    text: "Posições, como fazer força, episiotomia e o momento do clampeamento do cordão.",
+  },
+  {
+    icon: Baby,
+    title: "Bloco 4 · Nascimento e pós-parto",
+    text: "Pele a pele na primeira hora, presença do acompanhante e como as decisões são tomadas em uma intercorrência.",
+  },
+];
+
+const answerKeys = [
+  {
+    icon: BadgeCheck,
+    title: "Alinhada às boas práticas",
+    text: "Você reconhece na hora quando a resposta mostra uma abordagem atualizada.",
+  },
+  {
+    icon: Search,
+    title: "Vale investigar mais",
+    text: "Respostas vagas do tipo “depende de cada caso” — com o que pedir em seguida.",
+  },
+  {
+    icon: AlertTriangle,
+    title: "Sinal de atenção",
+    text: "Frases que indicam que aquele ponto precisa de conversa antes de você decidir.",
+  },
 ];
 
 const benefits = [
-  "Entrar em cada consulta com confiança tranquila.",
-  "Nunca mais esquecer uma pergunta importante.",
-  "Entender o que está acontecendo no seu corpo.",
-  "Participar das decisões médicas sobre o seu parto.",
-  "Sentir-se mais calma entre uma consulta e outra.",
-  "Chegar à maternidade sabendo exatamente o que perguntar.",
+  "Entender como o seu obstetra realmente trabalha — antes do dia do parto.",
+  "Perceber respostas vagas e saber exatamente o que perguntar depois.",
+  "Escolher (ou trocar) a sua equipe com informação, não com achismo.",
+  "Chegar à consulta com as perguntas prontas, mesmo com 10 minutos.",
+  "Registrar as respostas e comparar profissionais com calma em casa.",
+  "Reduzir o risco de intervenções desnecessárias e de violência obstétrica.",
 ];
+
 
 export function SolutionInside() {
   return (
