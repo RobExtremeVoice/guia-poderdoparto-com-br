@@ -10,22 +10,23 @@ const problems = [
   },
   {
     icon: Brain,
-    title: "Tudo o que você queria perguntar some",
-    text: "Você ensaiou a pergunta no caminho. Aí o médico pergunta como você está, você responde “bem”, e sai da sala com a dúvida ainda presa na garganta.",
+    title: "As respostas vêm vagas",
+    text: "“Depende de cada caso.” “Na hora a gente vê.” “Eu faço os dois.” Você sai sem saber, de verdade, como aquele profissional conduz um parto.",
   },
   {
     icon: Timer,
-    title: "Algumas coisas você descobre tarde demais",
-    text: "Plano de parto, sinais de alerta, rotinas da maternidade, apoio à amamentação — muitas mães só descobrem o que perguntar quando já não dá mais tempo de mudar nada.",
+    title: "Você só descobre no dia",
+    text: "Taxa de cesárea, indução, episiotomia, doula, acompanhante, pele a pele. Muitas mulheres descobrem a posição real da equipe quando já estão em trabalho de parto.",
   },
 ];
 
 const agitations = [
-  { icon: AlertTriangle, label: "Ansiedade entre uma consulta e outra" },
-  { icon: HeartCrack, label: "Insegurança sobre o próprio corpo" },
+  { icon: AlertTriangle, label: "Cesárea marcada “por precaução”" },
+  { icon: HeartCrack, label: "Plano de parto que ninguém leu" },
   { icon: ShieldOff, label: "Procedimentos que você nunca autorizou" },
   { icon: Brain, label: "Decisões tomadas sem você" },
 ];
+
 
 export function ProblemAgitate() {
   return (
@@ -34,13 +35,15 @@ export function ProblemAgitate() {
         <div className="mx-auto max-w-6xl px-5">
           <Reveal>
             <h2 className="mx-auto max-w-3xl text-center text-3xl font-semibold leading-tight sm:text-[2.6rem]">
-              A maioria das gestantes sai da consulta com mais dúvidas do que respostas.
+              Escolher a equipe é a decisão mais importante da sua gestação — e quase ninguém sabe o
+              que perguntar.
             </h2>
             <p className="mx-auto mt-5 max-w-2xl text-center text-base leading-relaxed text-muted-foreground sm:text-lg">
               Você esperou três semanas por aqueles dez minutos. Ficou na sala de espera ensaiando o
-              que dizer. E no caminho de volta percebeu: esqueceu de perguntar justamente aquilo que
-              tirava o seu sono.
+              que dizer. E no caminho de volta percebeu: continua sem saber como esse profissional
+              conduz um parto de verdade.
             </p>
+
           </Reveal>
 
           <div className="mt-14 grid gap-6 md:grid-cols-3">
@@ -63,18 +66,19 @@ export function ProblemAgitate() {
         <div className="mx-auto max-w-4xl px-5 text-center">
           <Reveal>
             <h2 className="text-3xl font-semibold leading-tight sm:text-[2.5rem]">
-              O problema não é a pergunta esquecida. É tudo o que cresce no lugar dela.
+              O problema não é a pergunta esquecida. É tudo o que acontece no lugar dela.
             </h2>
             <div className="mx-auto mt-7 max-w-2xl space-y-4 text-base leading-relaxed text-secondary-foreground sm:text-lg">
               <p>
-                O silêncio vira busca no Google às 2 da manhã, onde todo sintoma vira o pior
-                cenário. A dúvida vira medo. O medo vira uma mulher que concorda com tudo porque não
-                se sente no direito de perguntar.
+                Quando a resposta vaga passa batida, ela vira conduta no dia do parto. O “a gente vê
+                na hora” vira indução sem indicação, episiotomia de rotina, acompanhante do lado de
+                fora, bebê levado antes do primeiro contato.
               </p>
               <p className="font-semibold text-foreground">
                 E então o parto acontece do jeito que outra pessoa decidiu.
               </p>
             </div>
+
           </Reveal>
 
           <ul className="mx-auto mt-10 grid max-w-2xl gap-3 sm:grid-cols-2">

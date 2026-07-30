@@ -37,9 +37,11 @@ export function Hero() {
           </h1>
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Um guia prático que ajuda você a se sentir preparada, confiante e informada em cada
-            consulta — mesmo quando o atendimento dura só 10 minutos.
+            O roteiro que mostra como o profissional realmente trabalha: 18 perguntas com exemplos
+            de resposta alinhada às boas práticas, sinais de atenção e espaço para as suas
+            anotações — mesmo quando a consulta dura só 10 minutos.
           </p>
+
 
           <div className="mt-8">
             <CtaButton />
@@ -85,9 +87,12 @@ export function Hero() {
             />
           </div>
           <div className="glass-card absolute -bottom-5 left-4 right-4 rounded-2xl px-5 py-4 sm:left-8 sm:right-auto sm:max-w-xs">
-            <p className="font-display text-lg font-semibold">18 perguntas. 1 checklist.</p>
-            <p className="text-sm text-muted-foreground">Pronto antes da sua próxima consulta.</p>
+            <p className="font-display text-lg font-semibold">18 perguntas. 4 blocos.</p>
+            <p className="text-sm text-muted-foreground">
+              Respostas comentadas + espaço para anotar.
+            </p>
           </div>
+
         </motion.div>
       </div>
     </section>
