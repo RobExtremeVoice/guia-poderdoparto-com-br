@@ -10,22 +10,23 @@ const problems = [
   },
   {
     icon: Brain,
-    title: "Tudo o que você queria perguntar some",
-    text: "Você ensaiou a pergunta no caminho. Aí o médico pergunta como você está, você responde “bem”, e sai da sala com a dúvida ainda presa na garganta.",
+    title: "As respostas vêm vagas",
+    text: "“Depende de cada caso.” “Na hora a gente vê.” “Eu faço os dois.” Você sai sem saber, de verdade, como aquele profissional conduz um parto.",
   },
   {
     icon: Timer,
-    title: "Algumas coisas você descobre tarde demais",
-    text: "Plano de parto, sinais de alerta, rotinas da maternidade, apoio à amamentação — muitas mães só descobrem o que perguntar quando já não dá mais tempo de mudar nada.",
+    title: "Você só descobre no dia",
+    text: "Taxa de cesárea, indução, episiotomia, doula, acompanhante, pele a pele. Muitas mulheres descobrem a posição real da equipe quando já estão em trabalho de parto.",
   },
 ];
 
 const agitations = [
-  { icon: AlertTriangle, label: "Ansiedade entre uma consulta e outra" },
-  { icon: HeartCrack, label: "Insegurança sobre o próprio corpo" },
+  { icon: AlertTriangle, label: "Cesárea marcada “por precaução”" },
+  { icon: HeartCrack, label: "Plano de parto que ninguém leu" },
   { icon: ShieldOff, label: "Procedimentos que você nunca autorizou" },
   { icon: Brain, label: "Decisões tomadas sem você" },
 ];
+
 
 export function ProblemAgitate() {
   return (
