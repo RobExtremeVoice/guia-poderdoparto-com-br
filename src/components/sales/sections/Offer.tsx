@@ -18,7 +18,7 @@ const bonuses = [
 
 export function Offer() {
   return (
-    <section id="oferta" className="scroll-mt-8 bg-soft-glow py-20 sm:py-28">
+    <section id="oferta" className="scroll-mt-8 bg-soft-glow py-14 sm:py-28">
       <div className="mx-auto max-w-3xl px-5">
         <Reveal>
           <h2 className="text-center text-3xl font-semibold leading-tight sm:text-[2.5rem]">

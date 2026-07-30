@@ -50,7 +50,7 @@ const benefits = [
 export function SolutionInside() {
   return (
     <>
-      <section className="bg-background py-20 sm:py-28">
+      <section className="bg-background py-14 sm:py-28">
         <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 lg:grid-cols-2 lg:gap-16">
           <Reveal>
             <div className="overflow-hidden rounded-[2rem] bg-brand-soft p-4 shadow-lift sm:p-8">
@@ -94,7 +94,7 @@ export function SolutionInside() {
         </div>
       </section>
 
-      <section className="bg-brand-soft py-20 sm:py-28">
+      <section className="bg-brand-soft py-14 sm:py-28">
         <div className="mx-auto max-w-6xl px-5">
           <Reveal>
             <h2 className="text-center text-3xl font-semibold leading-tight sm:text-[2.5rem]">
@@ -123,7 +123,7 @@ export function SolutionInside() {
         </div>
       </section>
 
-      <section className="bg-background py-20 sm:py-28">
+      <section className="bg-background py-14 sm:py-28">
         <div className="mx-auto max-w-4xl px-5">
           <Reveal>
             <h2 className="text-center text-3xl font-semibold leading-tight sm:text-[2.5rem]">

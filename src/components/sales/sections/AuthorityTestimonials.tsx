@@ -49,7 +49,7 @@ function Stars() {
 export function AuthorityTestimonials() {
   return (
     <>
-      <section className="bg-brand-soft py-20 sm:py-28">
+      <section className="bg-brand-soft py-14 sm:py-28">
         <div className="mx-auto grid max-w-5xl items-center gap-10 px-5 md:grid-cols-[0.8fr_1.2fr] md:gap-14">
           <Reveal>
             <div className="overflow-hidden rounded-[2rem] shadow-lift">
@@ -103,7 +103,7 @@ export function AuthorityTestimonials() {
         </div>
       </section>
 
-      <section className="bg-background py-20 sm:py-28">
+      <section className="bg-background py-14 sm:py-28">
         <div className="mx-auto max-w-6xl px-5">
           <Reveal>
             <h2 className="text-center text-3xl font-semibold leading-tight sm:text-[2.5rem]">

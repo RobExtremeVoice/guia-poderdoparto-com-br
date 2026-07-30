@@ -30,7 +30,7 @@ const agitations = [
 export function ProblemAgitate() {
   return (
     <>
-      <section className="bg-background py-20 sm:py-28">
+      <section className="bg-background py-14 sm:py-28">
         <div className="mx-auto max-w-6xl px-5">
           <Reveal>
             <h2 className="mx-auto max-w-3xl text-center text-3xl font-semibold leading-tight sm:text-[2.6rem]">
@@ -59,7 +59,7 @@ export function ProblemAgitate() {
         </div>
       </section>
 
-      <section className="bg-brand-soft py-20 sm:py-28">
+      <section className="bg-brand-soft py-14 sm:py-28">
         <div className="mx-auto max-w-4xl px-5 text-center">
           <Reveal>
             <h2 className="text-3xl font-semibold leading-tight sm:text-[2.5rem]">
