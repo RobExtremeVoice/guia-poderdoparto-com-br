@@ -70,11 +70,22 @@ export function AuthorityTestimonials() {
             <h2 className="mt-4 text-3xl font-semibold leading-tight sm:text-[2.4rem]">
               Dra. Mariana Betioli
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-secondary-foreground sm:text-lg">
-              Depois de anos acompanhando gestações e partos, eu via sempre a mesma coisa: mulheres
-              informadas têm gestações mais tranquilas e partos mais seguros. Este guia é a lista de
-              perguntas que eu gostaria que toda gestante levasse para a consulta.
-            </p>
+            <div className="mt-4 space-y-4 text-base leading-relaxed text-secondary-foreground sm:text-lg">
+              <p>
+                Sou Mari Betioli, há 19 anos trabalho com gestantes oferecendo assistência durante o
+                pré-natal, parto, pós-parto e amamentação. Sou mãe de três filhos e apaixonada por
+                ajudar mulheres a viverem partos transformadores.
+              </p>
+              <p>
+                Já atuei como obstetriz no Brasil, Portugal e EUA, e já acompanhei centenas de
+                partos em hospitais, casas de parto e partos domiciliares.
+              </p>
+              <p>
+                Criei o Poder do Parto para estar com você, mesmo que à distância, te guiando e te
+                preparando para viver o momento mais importante da sua vida com segurança, amor e
+                confiança.
+              </p>
+            </div>
             <ul className="mt-7 space-y-4">
               {credentials.map((c) => (
                 <li key={c.text} className="flex items-start gap-3">
