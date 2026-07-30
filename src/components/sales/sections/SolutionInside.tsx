@@ -56,7 +56,7 @@ export function SolutionInside() {
             <div className="overflow-hidden rounded-[2rem] bg-brand-soft p-4 shadow-lift sm:p-8">
               <img
                 src={capaLivro.url}
-                alt="Capa do guia 18 perguntas para fazer ao obstetra, de Mariana Betioli"
+                alt="Capa do guia 18 perguntas para fazer ao obstetra, de Dra. Mariana Betioli"
                 width={1129}
                 height={1412}
                 loading="lazy"

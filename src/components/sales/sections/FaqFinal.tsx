@@ -76,7 +76,7 @@ export function FaqFinal() {
             médico. Siga sempre as orientações do seu obstetra.
           </p>
           <p className="mt-3">
-            © {new Date().getFullYear()} O Poder do Parto · Mariana Betioli · Todos os direitos
+            © {new Date().getFullYear()} O Poder do Parto · Dra. Mariana Betioli · Todos os direitos
             reservados.
           </p>
         </div>
