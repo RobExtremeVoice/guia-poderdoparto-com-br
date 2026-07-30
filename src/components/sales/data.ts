@@ -1,48 +1,48 @@
 export const FAQS: { q: string; a: string }[] = [
   {
-    q: "How do I receive the guide?",
-    a: "Immediately after payment you receive an email with your download link. Access is instant — you can read it on your phone in the waiting room today.",
+    q: "Como eu recebo o guia?",
+    a: "Assim que o pagamento é confirmado, você recebe um e-mail com o link de acesso. É imediato — dá para ler no celular ainda hoje, na sala de espera.",
   },
   {
-    q: "Is this a physical book?",
-    a: "No. It is a digital guide (PDF) optimised for phones, tablets and printing. Nothing is shipped, so there are no delivery fees or waiting.",
+    q: "É um livro físico?",
+    a: "Não. É um guia digital (PDF) otimizado para celular, tablet e impressão. Nada é enviado pelos Correios, então não há frete nem espera.",
   },
   {
-    q: "Does it replace my doctor?",
-    a: "Never. The guide does not diagnose or prescribe. It helps you have a clearer, more productive conversation with your own obstetrician.",
+    q: "O guia substitui o meu médico?",
+    a: "Nunca. Ele não diagnostica e não prescreve nada. Ele existe para que a sua conversa com o seu obstetra seja mais clara e mais produtiva.",
   },
   {
-    q: "I'm only a few weeks pregnant. Is it too early?",
-    a: "The earlier the better. The questions are organised by trimester, so you always know what matters at your current stage.",
+    q: "Estou no comecinho da gestação. É cedo demais?",
+    a: "Quanto antes, melhor. As perguntas são organizadas por trimestre, então você sempre sabe o que importa na fase em que está.",
   },
   {
-    q: "I'm already in my third trimester. Is it too late?",
-    a: "Not at all. Labour, birth plan, hospital and breastfeeding questions become even more valuable in the final weeks.",
+    q: "Já estou no terceiro trimestre. É tarde demais?",
+    a: "De jeito nenhum. As perguntas sobre parto, plano de parto, maternidade e amamentação ficam ainda mais valiosas nas últimas semanas.",
   },
   {
-    q: "What if my appointments are on public health service?",
-    a: "The guide was written for short appointments exactly like those. The questions are prioritised so the essentials get asked first.",
+    q: "E se meu pré-natal for pelo SUS?",
+    a: "O guia foi pensado justamente para consultas curtas. As perguntas são priorizadas para que o essencial seja perguntado primeiro.",
   },
   {
-    q: "How long does it take to read?",
-    a: "Around 20 minutes to read fully, and 2 minutes to review the checklist before each appointment.",
+    q: "Quanto tempo leva para ler?",
+    a: "Cerca de 20 minutos para ler tudo, e 2 minutos para revisar o checklist antes de cada consulta.",
   },
   {
-    q: "Can I print it?",
-    a: "Yes. A print-ready version and a printable checklist are included so you can take it on paper.",
+    q: "Posso imprimir?",
+    a: "Sim. Você recebe uma versão pronta para impressão e o checklist impresso para levar na pasta do pré-natal.",
   },
   {
-    q: "Is the payment secure?",
-    a: "Yes. Payment is processed on an encrypted checkout page. Your card details never touch this website.",
+    q: "O pagamento é seguro?",
+    a: "Sim. A compra é processada em ambiente criptografado. Os dados do seu cartão não passam por este site.",
   },
   {
-    q: "What if I don't like it?",
-    a: "You have 7 days to request a full refund. One email is enough — no questions, no forms, no friction.",
+    q: "E se eu não gostar?",
+    a: "Você tem 7 dias para pedir reembolso integral. Basta um e-mail — sem formulário, sem burocracia, sem perguntas.",
   },
   {
-    q: "Can I gift it to a pregnant friend?",
-    a: "Absolutely. Many buyers purchase it as a gift for a daughter, sister or friend. The file can be shared with her directly.",
+    q: "Posso presentear uma amiga grávida?",
+    a: "Claro. Muitas compras são presentes para filhas, irmãs e amigas. Você pode enviar o acesso direto para ela.",
   },
 ];
 
-export const PRODUCT_NAME = "18 Essential Questions Every Pregnant Woman Should Ask Her Obstetrician";
+export const PRODUCT_NAME = "18 Perguntas para Fazer ao Obstetra";
