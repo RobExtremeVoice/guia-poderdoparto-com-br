@@ -117,9 +117,10 @@ export function Offer() {
               <h3 className="text-2xl font-semibold">Garantia incondicional de 7 dias</h3>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base">
                 Leia todas as perguntas, imprima o checklist, leve na consulta. Se não fizer você se
-                sentir mais preparada, é só enviar um e-mail em até 7 dias e receber 100% do valor de
-                volta. Os bônus continuam com você.
+                sentir mais preparada para escolher a sua equipe, é só enviar um e-mail em até 7
+                dias e receber 100% do valor de volta. Os bônus continuam com você.
               </p>
+
             </div>
           </div>
         </Reveal>
