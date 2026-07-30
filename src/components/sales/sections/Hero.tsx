@@ -37,9 +37,11 @@ export function Hero() {
           </h1>
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Um guia prático que ajuda você a se sentir preparada, confiante e informada em cada
-            consulta — mesmo quando o atendimento dura só 10 minutos.
+            O roteiro que mostra como o profissional realmente trabalha: 18 perguntas com exemplos
+            de resposta alinhada às boas práticas, sinais de atenção e espaço para as suas
+            anotações — mesmo quando a consulta dura só 10 minutos.
           </p>
+
 
           <div className="mt-8">
             <CtaButton />
