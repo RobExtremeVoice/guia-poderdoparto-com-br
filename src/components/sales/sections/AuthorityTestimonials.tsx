@@ -118,7 +118,7 @@ export function AuthorityTestimonials() {
                   <blockquote className="mt-4 flex-1 text-base leading-relaxed text-foreground">
                     “{t.text}”
                   </blockquote>
-                  <figcaption className="mt-6 flex items-center gap-3 border-t border-border pt-5">
+                  <figcaption className="mt-6 grid grid-cols-[auto_minmax(0,1fr)] items-center gap-x-3 gap-y-2 border-t border-border pt-5">
                     <span
                       aria-hidden="true"
                       className="inline-flex size-11 shrink-0 items-center justify-center rounded-full bg-brand-gradient font-display text-lg font-semibold text-brand-foreground"
@@ -129,10 +129,11 @@ export function AuthorityTestimonials() {
                       <span className="block truncate font-semibold">{t.name}</span>
                       <span className="block truncate text-sm text-muted-foreground">{t.role}</span>
                     </span>
-                    <span className="ml-auto shrink-0">
+                    <span className="col-span-2">
                       <Stars />
                     </span>
                   </figcaption>
+
                 </figure>
               </Reveal>
             ))}
