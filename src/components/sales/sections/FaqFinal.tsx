@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import logoBranca from "@/assets/logo-branca.png.asset.json";
 import { Reveal } from "../Reveal";
 import { CtaButton } from "../CtaButton";
 import { FAQS } from "../data";
@@ -15,7 +16,7 @@ export function FaqFinal() {
         <div className="mx-auto max-w-3xl px-5">
           <Reveal>
             <h2 className="text-center text-3xl font-semibold leading-tight sm:text-[2.5rem]">
-              Questions before you start asking questions
+              Dúvidas antes de começar a perguntar
             </h2>
           </Reveal>
           <Reveal delay={0.08}>
@@ -42,19 +43,27 @@ export function FaqFinal() {
       <section className="bg-brand-gradient py-20 text-brand-foreground sm:py-28">
         <div className="mx-auto max-w-3xl px-5 text-center">
           <Reveal>
-            <h2 className="text-3xl font-semibold leading-tight sm:text-[2.7rem]">
-              Your next appointment is coming. You get to decide how you walk out of it.
+            <img
+              src={logoBranca.url}
+              alt="O Poder do Parto"
+              width={320}
+              height={116}
+              loading="lazy"
+              className="mx-auto h-14 w-auto"
+            />
+            <h2 className="mt-8 text-3xl font-semibold leading-tight sm:text-[2.6rem]">
+              A sua próxima consulta está chegando. Você decide como vai sair dela.
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed opacity-95 sm:text-lg">
-              With the same ten minutes, the same doctor and the same waiting room — but with 18
-              questions in your hand, a checklist in your folder and the certainty that nothing
-              important was left unsaid. That's what R$27 buys today.
+              Com os mesmos dez minutos, o mesmo médico e a mesma sala de espera — mas com 18
+              perguntas na mão, um checklist na pasta e a certeza de que nada importante ficou por
+              dizer. É isso que R$27 compram hoje.
             </p>
             <div className="mt-10 flex justify-center">
-              <CtaButton className="bg-[oklch(1_0_0)] bg-none text-brand-accent" />
+              <CtaButton className="bg-[oklch(1_0_0)] bg-none text-brand" />
             </div>
             <p className="mt-4 text-sm opacity-90">
-              Instant access · 7-day guarantee · Read it on your phone today
+              Acesso imediato · garantia de 7 dias · leia hoje no celular
             </p>
           </Reveal>
         </div>
@@ -63,11 +72,12 @@ export function FaqFinal() {
       <footer className="bg-background py-10">
         <div className="mx-auto max-w-3xl px-5 text-center text-xs leading-relaxed text-muted-foreground">
           <p>
-            This guide is educational material and does not replace medical consultation, diagnosis
-            or treatment. Always follow the guidance of your obstetrician.
+            Este guia é material educativo e não substitui consulta, diagnóstico ou tratamento
+            médico. Siga sempre as orientações do seu obstetra.
           </p>
           <p className="mt-3">
-            © {new Date().getFullYear()} 18 Essential Questions · All rights reserved.
+            © {new Date().getFullYear()} O Poder do Parto · Mariana Betioli · Todos os direitos
+            reservados.
           </p>
         </div>
       </footer>
