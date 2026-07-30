@@ -1,5 +1,5 @@
 import { Award, GraduationCap, Quote, Star, Users } from "lucide-react";
-import autoraImg from "@/assets/autora.jpg";
+import autoraImg from "@/assets/mariana-betioli.png.asset.json";
 import { Reveal } from "../Reveal";
 
 const credentials = [
@@ -54,12 +54,12 @@ export function AuthorityTestimonials() {
           <Reveal>
             <div className="overflow-hidden rounded-[2rem] shadow-lift">
               <img
-                src={autoraImg}
+                src={autoraImg.url}
                 alt="Dra. Mariana Betioli, obstetriz, doula e educadora perinatal, autora do guia"
-                width={912}
-                height={1104}
+                width={294}
+                height={300}
                 loading="lazy"
-                className="w-full object-cover"
+                className="aspect-[4/5] w-full bg-card object-cover object-top"
               />
             </div>
           </Reveal>
