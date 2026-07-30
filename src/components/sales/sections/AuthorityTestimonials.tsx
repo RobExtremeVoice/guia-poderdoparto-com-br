@@ -49,7 +49,7 @@ function Stars() {
 export function AuthorityTestimonials() {
   return (
     <>
-      <section className="bg-brand-soft py-20 sm:py-28">
+      <section className="bg-brand-soft py-14 sm:py-28">
         <div className="mx-auto grid max-w-5xl items-center gap-10 px-5 md:grid-cols-[0.8fr_1.2fr] md:gap-14">
           <Reveal>
             <div className="overflow-hidden rounded-[2rem] shadow-lift">
@@ -103,7 +103,7 @@ export function AuthorityTestimonials() {
         </div>
       </section>
 
-      <section className="bg-background py-20 sm:py-28">
+      <section className="bg-background py-14 sm:py-28">
         <div className="mx-auto max-w-6xl px-5">
           <Reveal>
             <h2 className="text-center text-3xl font-semibold leading-tight sm:text-[2.5rem]">
@@ -118,7 +118,7 @@ export function AuthorityTestimonials() {
                   <blockquote className="mt-4 flex-1 text-base leading-relaxed text-foreground">
                     “{t.text}”
                   </blockquote>
-                  <figcaption className="mt-6 flex items-center gap-3 border-t border-border pt-5">
+                  <figcaption className="mt-6 grid grid-cols-[auto_minmax(0,1fr)] items-center gap-x-3 gap-y-2 border-t border-border pt-5">
                     <span
                       aria-hidden="true"
                       className="inline-flex size-11 shrink-0 items-center justify-center rounded-full bg-brand-gradient font-display text-lg font-semibold text-brand-foreground"
@@ -129,10 +129,11 @@ export function AuthorityTestimonials() {
                       <span className="block truncate font-semibold">{t.name}</span>
                       <span className="block truncate text-sm text-muted-foreground">{t.role}</span>
                     </span>
-                    <span className="ml-auto shrink-0">
+                    <span className="col-span-2">
                       <Stars />
                     </span>
                   </figcaption>
+
                 </figure>
               </Reveal>
             ))}

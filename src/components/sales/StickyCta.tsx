@@ -20,7 +20,7 @@ export function StickyCta() {
         visible ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-full opacity-0"
       }`}
     >
-      <div className="glass-card mx-auto mb-3 flex max-w-3xl items-center gap-4 rounded-3xl px-4 py-3 sm:px-6">
+      <div className="glass-card mx-auto mb-[max(0.75rem,env(safe-area-inset-bottom))] flex max-w-3xl items-center gap-3 rounded-3xl px-3 py-3 sm:gap-4 sm:px-6">
         <div className="hidden min-w-0 flex-1 sm:block">
           <p className="truncate font-display text-lg font-semibold">18 Perguntas ao Obstetra</p>
           <p className="text-sm text-muted-foreground">
@@ -28,15 +28,22 @@ export function StickyCta() {
             <span className="font-bold text-brand-accent">R$27</span> · acesso imediato
           </p>
         </div>
-        <CtaButton
-          size="md"
-          className="max-w-none flex-1 sm:max-w-xs"
-          label="Comprar o guia agora por R$27"
-        >
-          QUERO MEU GUIA — R$27
-        </CtaButton>
+        <div className="min-w-0 flex-1 sm:max-w-xs sm:flex-none">
+          <CtaButton
+            size="md"
+            className="w-full max-w-none"
+            label="Comprar o guia agora por R$27"
+          >
+            QUERO MEU GUIA — R$27
+          </CtaButton>
+          <p className="mt-1.5 text-center text-[0.7rem] font-medium text-muted-foreground sm:hidden">
+            <span className="line-through">R$97</span>{" "}
+            <span className="font-bold text-brand-accent">R$27</span> · garantia de 7 dias
+          </p>
+        </div>
         <Lock className="hidden size-5 shrink-0 text-success sm:block" aria-hidden="true" />
       </div>
+
     </div>
   );
 }

@@ -67,7 +67,7 @@ export const Route = createFileRoute("/")({
 function SalesPage() {
   return (
     <>
-      <main className="pb-24">
+      <main className="pb-32 sm:pb-24">
         <Hero />
         <ProblemAgitate />
         <SolutionInside />
