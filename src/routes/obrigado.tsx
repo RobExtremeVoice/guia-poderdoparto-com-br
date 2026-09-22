@@ -4,19 +4,15 @@ import {
   ArrowRight,
   Baby,
   BadgeCheck,
-  BookOpen,
   Check,
   CircleCheck,
   Clock,
-  HeartHandshake,
   Mail,
-  MessageCircleHeart,
   PartyPopper,
   ShieldCheck,
   Smartphone,
   Sparkles,
   Star,
-  Stethoscope,
 } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Reveal } from "@/components/sales/Reveal";
