@@ -593,10 +593,3 @@ function ObrigadoPage() {
       </div>
     </div>
   );
-}
-
-// Ícones extras usados nos cards de pilares (mantidos para extensões futuras)
-void BookOpen;
-void HeartHandshake;
-void MessageCircleHeart;
-void Stethoscope;
