@@ -9,7 +9,7 @@ type CtaButtonProps = {
 };
 
 export const CHECKOUT_URL =
-  "https://pay.hotmart.com/L106951951S?off=n58qbcio&checkoutMode=10&bid=1790046431759";
+  "https://pay.hotmart.com/L106951951S?off=n58qbcio&bid=1790046431759";
 
 /** Botão principal de conversão, usado em todos os blocos de CTA. */
 export function CtaButton({
